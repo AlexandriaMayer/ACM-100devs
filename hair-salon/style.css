@@ -1,0 +1,250 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(245,249,252);
+}
+*, *:before, *:after{
+    box-sizing: inherit, border-box;
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    text-decoration: none;
+    list-style-type: none;
+}
+/**Logo Color: rgb(252,142,25)**/
+
+header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+header > a{
+    padding: 20px;
+    border: none;
+    color:black;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+.header-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.header-list > li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.header-list > li > a{
+    text-decoration: none;
+    color: rgb(25, 25, 25)
+}
+/**.logo{
+    margin-right: auto;
+}**/
+.headline > h1{
+    font-size: 4.8rem;
+}
+.headline > p{
+    font-size: 1.6rem;
+    padding: 20px;
+}
+.dropdown{
+    /**ugh he wanted to do javascript, nope**/
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color:black;
+    border: none;
+    cursor: pointer;
+}
+.dropdown >a{
+    display: block;
+    color: black;
+    background-color: azure;
+    text-decoration: none;
+    padding: 10px;
+}
+.dropdown .dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: azure;
+    min-width: 100px;
+    box-shadow: 3px 3px 5px black;
+
+}
+.dropdown:hover .dropdown-menu{
+    display:flex;
+    flex-direction: column;
+}
+.dropdown:hover button{
+    background-color: rgb(40, 40, 40);
+}
+.dropdown > a{
+    color: black
+}
+.dropdown a:hover{
+    background-color: lightcyan
+}
+.booking > h2{
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+}
+.index-information-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.index-information-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.index-information-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.feature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.feature-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+.feature-item{
+    padding: 20px;
+}
+.booking{
+    background-color: black;
+    padding: 20px;
+}
+.booking > p{
+    font-size: 1.6rem;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+.booking > p > span{
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    background-color: black;
+}
+.booking > a{
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.index-video{
+    padding: 24px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.index-video > section{
+    padding: 24px;
+}
+.abu-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+.abu-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+}
+.stylist-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 100px;
+}
+.stylist-list > li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+.stylist-blurb{
+    padding: 12px;
+    background-color: black;
+}
+.stylist-blurb >h3{
+    color: white;
+    background-color: black;
+}
+.stylist-blurb > p{
+    color: white;
+    background-color: black;
+}
+.offer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: lightcyan;
+}
+.offer-blurb{
+    background-color: lightcyan;
+}
+.offer-blurb > h2{
+    padding: 16px;
+}
+.offer-blurb > p{
+    padding: 16px;
+}
+.offer-blurb > a{
+    padding: 8px;
+    background-color: black;
+    color: white;
+    margin: 16px;
+}
+.offer-blurb > p > span{
+    font-weight: 900;
+}
+.abu-3{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.abu-3 > h1{
+    font-weight: 700;
+    font-size: 3.6rem;
+}
+.lookbook{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px; 
+}
+.lookbook_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.lookbook_1 > img{
+    padding: 20px 0px;
+}
