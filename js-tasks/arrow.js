@@ -6,8 +6,6 @@ let ask = (question, yes, no) => {
   else no();
 }
 
-ask(
+console.log(ask(
   "Do you agree?",
-  => { alert("You agreed."); },
-  => { alert("You canceled the execution."); }
-);
+  "You agreed.","You canceled the execution."))
