@@ -9,3 +9,6 @@ let ask = (question, yes, no) => {
 console.log(ask(
   "Do you agree?",
   "You agreed.","You canceled the execution."))
+
+
+//okay turns out this code is incorrect, but I don't know how to format it right now.
