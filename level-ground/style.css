@@ -1,0 +1,281 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color: steelblue;
+    color: white;  
+    text-transform: uppercase;
+
+}
+
+header > nav > ul {
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+
+}
+header > nav > ul > li {
+    display: inline-block;
+    padding: 20px 5%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.4rem;
+}
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+.spacer{
+    color: steelblue;
+}
+.donation-link{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+.donation-link > a{
+    text-decoration: none;
+    color: steelblue;
+}
+.main-1{
+    background-color: steelblue;
+    width: 100%;
+    height: 60%;
+    color: white;
+    padding: 100px
+}
+.main-1 > h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+}
+.main-1 > p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 12px;
+}
+.main-1 > p > a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+}
+.main-1-bg-img{
+    padding: 32px;
+}
+.main-2{
+    background-color: white;
+    color: rgb(27, 27, 27);
+    padding: 100px;
+}
+.main-2 > h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.4rem;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 12px;
+}
+.main-2 > p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+.main-3{
+    padding: 100px;
+    background-color: grey;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+.main-3 > h3{
+    font-weight: 600;
+    font-size: 3.6rem;
+}
+.main-3s{
+    width: 50%;
+    padding: 24px;
+    justify-content: space-around;
+    flex-direction: row;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid yellow;
+}
+.main-3s > p{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    border: 2px solid orange;
+}
+.main-3s > p > a{    
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    margin: 16px;
+    padding: 16px;
+    border: solid 0.5px rgb(27, 27, 27);
+    text-align: center;
+}
+.wire-border > a {
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    padding: 16px;
+    border: solid 0.5px grey;
+}
+.main-4{
+    background-color: white;
+    color: rgb(27, 27, 27);
+    padding: 100px;
+    border: 2px solid red;
+}
+.main-4 > h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.4rem;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 12px;
+}
+.main-4 > p{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    border: 2px solid orange;
+}
+.main-4 > p > a{
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    margin: 16px;
+    padding: 16px;
+    border: solid 0.5px grey;
+    text-align: center;
+}
+footer{
+    padding: 32px;
+    background-color: rgb(38, 39, 82);
+    font-size: 1.6rem;
+    color: white;
+}
+footer > ul {
+    width: 100%;
+    border: solid 2px red;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer > ul > li{
+    text-decoration: none;
+    list-style-type: none;
+    border: solid 1px orange;  
+}
+footer > ul > li > ul{
+    border: solid 2px gold;
+    list-style-type: none;
+    padding: 0;
+}
+footer > ul > li > ul > li{
+    text-decoration: none;
+    list-style-type: none;
+    color: lightgray;
+    padding: 8px 8px 8px 0px;
+    border: 1px solid turquoise;
+}
+footer > ul > li > ul > li +li{
+    text-decoration: none;
+    border: solid 1px olive;
+    list-style-type: none;
+}
+footer > ul > li > ul > li > ul{
+    border: 2px solid lime;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+}
+    
+footer > ul > li > ul > li > ul > li{
+    height: 20px;
+    border: 2px dashed cyan;
+}
+footer > ul > li > ul > li +li > a{
+    text-decoration: none;
+    font-weight: 600;
+  color: white;}
+footer > ul > li > ul > li > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 16px;
+}
+footer > ul > li > ul > li > span{
+    font-weight: 700;
+}
+footer > ul > li > ul > li +li > a + a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+footer > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
