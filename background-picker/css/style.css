@@ -1,0 +1,80 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1, h2{
+  text-align: center;
+}
+img{
+  display: block;
+  margin: 0 auto;
+}
+ul{
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 100px;
+  border: 3px solid black;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+li{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color:white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 700px;
+  font-size: 36px;
+}
+
+section{
+  width: 75%;
+  height: 75%;
+  border: 5px solid black;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/** I ended up using https://davidmathlogic.com/colorblind/#%23D20F50-%2337C823-%231414B9-%23C80FC8-%23BF5700
+to test which color combination was color-blind friendly.**/
+#m1{
+  background: rgb(215, 10, 80);
+}
+#m2{
+  background: rgb(55 , 200, 35);
+}
+#m3{
+  background: rgb(20, 20, 185);
+}
+#m4{
+  background: rgb(180 , 20, 220);
+}
+#m5{
+  background: rgb(191, 87, 0);
+}
+#m6{
+  background: rgb(230, 205, 15)
+}
+#s1{
+  background: rgb(110, 20, 10);
+}
+#s2{
+  background: rgb(15, 90, 80);
+}
+#s3{
+  background: rgb(35, 20, 100);
+}
