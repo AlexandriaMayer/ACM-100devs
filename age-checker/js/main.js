@@ -28,10 +28,12 @@ else if (age >= 30){
 
 //--- Harder
 //On click of the h1
+const h1Holder = document.querySelector('h1')
 h1Holder.addEventsListener('click', growing)
 //Take the value from the input
 function growing(){
-    let inputedAge = document.querySelector('#danceDanceRevolution').value}
-    return inputedAge
+    let inputedAge = document.querySelector('#danceDanceRevolution').value
+    document.querySelector('#placetexthere').innertext=inputedAge}
+    //return inputedAge}
 //Place the result of the conditional in the paragraph
-document.querySelector('#placetexthere').innertext=`${inputedAge}`
+//document.querySelector('#placetexthere').innertext=`${inputedAge}`
