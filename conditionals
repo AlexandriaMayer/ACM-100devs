@@ -1,0 +1,9 @@
+const breakfast = "Cafe Java"
+
+if (breakfast === "McDonalds"){
+    console.log("Overpriced tbh")
+} else if (breakfast === "Cafe Java"){
+    console.log("The BEST Breakfast in Austin!")
+} else {
+    console.log("ok")
+}
