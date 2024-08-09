@@ -7,6 +7,7 @@ function evenOrOdd(number) {
   }
   else{
     return "Odd"
+    // this else seems to cover negative odd numbers not being retunred as odd under the first else if.
   }
 }
 evenOrOdd(4)
