@@ -12,11 +12,19 @@ html{
     text-decoration: none;
     list-style-type: none;
 }
-header{
+/**header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 10%
+    height: 10%;
+    align-items: center;
+}**/
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10%;
+    align-items: center;
 }
 .header-list{
     list-style: none;
@@ -28,9 +36,11 @@ header{
 .header-item{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     text-decoration: none;
     list-style-type: none;
+    font-size: 1.2rem;
+    padding: 0px 12px;
 }
 .header-item>a{
     text-decoration: none;
@@ -39,6 +49,8 @@ header{
 #map{
     width: 100%;
 }
-h1{
-    color: blue;
+h2{
+    font-size: 1.6rem;
+    align-self: center;
+    justify-self: center;
 }
