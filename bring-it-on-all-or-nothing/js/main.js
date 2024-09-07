@@ -59,3 +59,9 @@ function fizzbuzz(num){
     else
         console.log('spaghetti')
 }
+
+function dylan(name){
+    name.push('Natasha')
+    return name
+}
+dylan(['Brett-Morgan','Tyler','Dylan'])
