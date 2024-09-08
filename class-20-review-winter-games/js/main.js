@@ -24,3 +24,17 @@ function winterGames (arr){
     }*/
 }
 winterGames([344, 21, 12, 4, 1944, 3, 91, 913])
+
+function threeMusketeers(tri){
+    for (let i = 0; i<tri.length();i++){
+        console.log(tri[i]);
+    }
+    tri.push("D'Artanan")
+    tri.forEach(myElement =>{
+        console.log(tri)
+    })
+    tri.shift(tri[2])
+    for(const gun of tri){
+        console.log(tri)
+    }
+}
