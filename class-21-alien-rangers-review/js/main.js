@@ -29,6 +29,12 @@ evenArray([48558, 294, 1, 4, 3, 4, 1050, 1, 9])
 //Alert the sum of the second lowest and the second highest number
 
 function minAndMax(arr){
+    // alternatively
+
+    let sorted = arr.sort((a,b)=> a - b)// almost the same thing, less filtering, but it's pretty neat
+    alert(sorted[1] + sorted[sorted.length-2]);
+    
+    /*
     arr.sort(function(x, y){
         return x - y
     })
@@ -42,5 +48,5 @@ function minAndMax(arr){
     result.push(sortedArr[1], sortedArr.length-2);
 
     return result.join(',');
-}
+*/}
 console.log(minAndMax([553, 3, 1, 5, 5, 27]));
