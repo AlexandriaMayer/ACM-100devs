@@ -88,6 +88,11 @@ function reverseArrayInPlace(arr5){
 }
 reverseArrayInPlace([9, 8, 7, 6, 5, 4])
 
+// deep comparison
+
+function deepEqual(deep){
+    
+}
 
 // oh my god it's case sensitive
 
