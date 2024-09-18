@@ -42,11 +42,25 @@ function sortArr(arr3){
 /* Write a range function that takes two arguments, start and end, and returns an array containing all the numbers 
 from start up to and including end.*/
 function rangerOne(start, end){
-    this.start=start;
-    this.end=end;
-    console.log(Range(start, end));
+    let texas = [];
+    for (i = start; i <= end; i++){
+        texas.push([i])
+    }
+    return texas; 
+};
+console.log(rangerOne(1, 10));
+//https://www.youtube.com/watch?v=c0paHt7kXIY
+
+function sumTheRange(texas){
+    let total = 0;
+    for(let i in texas){
+        total = total+texas[i]
+    }
+    return total;
 }
-// const texasRanger = new rangerOne(1, 21) // ok this is not working
+console.log(sumTheRange(rangerOne([1, 10])))
+
+// https://stackoverflow.com/questions/36718158/the-sum-of-a-range-using-javascript
 
 // reverse an array without arr.prototype.reverse()
 
