@@ -90,6 +90,29 @@ reverseArrayInPlace([9, 8, 7, 6, 5, 4])
 
 // deep comparison
 
+let = function deepEqual(c, d){
+    if (c===d){
+        return true;
+    }
+    else if((typeof c=="object" && c !=null) && (typeof d=="object" && c !==null)){
+        if (Object.keys(c).length != Object.keys(d).length)
+            return false
+        for (let prop in c){
+            if (d.hasOwnProperty(pro)){
+                if (! deepEqual(c[prop], y[prop]))
+                    return false;
+            }
+            else
+                return false;
+        }
+        return true;
+    }
+    else
+        return false;
+}
+
+// https://stackoverflow.com/questions/25456013/javascript-deepequal-comparison
+
 function deepEqual(deep){
     
 }
