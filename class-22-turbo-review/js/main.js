@@ -33,7 +33,7 @@ if(brat.search('apple') !==1){
 // Create a function that returns rock, paper, or scissors as randomly as possible
 
 function rockPaperScissors(){
-    let roll = math.random()
+    let roll = Math.random()
     if (roll<.33){
         console.log("rock")
     }
@@ -52,6 +52,26 @@ rockPaperScissors()
 // *Conditionals*
 /*Create a function that takes in a choice (rock, paper, or scissors) and determines if they won a game of rock paper scissors 
 against a bot using the above function*/
+
+function checkWin(hakaseChoice){
+    // first comes the rock, what's going to be?
+    // rock paper scissors and one, two, three!
+    // https://www.youtube.com/watch?v=WhquiIVkVww
+
+    let nanoChoice = rockPaperScissors()
+    if ((hakaseChoice === 'rock' && nanoChoice === 'scissors') || 
+        (hakaseChoice === 'paper' && nanoChoice === 'rock') ||
+        (hakaseChoice === 'scissors' && nanoChoice === 'paper')){
+            console.log('You win!')
+    }
+    else if(hakaseChoice === nanoChoice){
+        console.log('You tied')
+    }
+    else{
+        console.log('You lose')
+    }
+}
+checkWin('rock')
 
 /*function competitiveRockPaperScissors(roll2){
     let user = InputEvent("What's your choice? 'r' for rock, 'p' for paper, 's' for scissors\n")
@@ -75,3 +95,8 @@ against a bot using the above function*/
 //*Loops*
 /*Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. 
 Print the results of each game to the console.*/
+
+function playGamesManyTimes(arr){
+    arr.forEach(hakaseChoice => checkWin(hakaseChoice))
+}
+playGamesManyTimes(['rock', 'paper', 'scissors'])
