@@ -35,4 +35,4 @@ function Stopwatch(){
     // stop.  throw Error() if hit twice
     // reset
 //}
-const startError = new Error("Stopwatch is already running")
+// const startError = new Error("Stopwatch is already running")
