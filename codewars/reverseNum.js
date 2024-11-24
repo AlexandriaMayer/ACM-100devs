@@ -9,3 +9,12 @@ function digitize(n) {
   }
   return arrR
 }
+
+
+//11/24/2024:
+
+function reverseList(list) {
+  return list.reverse()
+}
+
+// too easy, i can't believe but I'll take it
