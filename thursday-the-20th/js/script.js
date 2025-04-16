@@ -29,9 +29,11 @@ function includeLastDay(){
 }
 
 
-function thursdayThe20th(firstDate, secondDate){
+function thursdayThe20th(){
     // we have to use recursion to loop through the dates
     // we already have our starting and ending dates
+    let firstDate = inputDate();
+    let secondDate = endingDate(); 
     let thursday = 0,
         the20th = 0,
         thursday20th = 0;
@@ -46,10 +48,11 @@ function thursdayThe20th(firstDate, secondDate){
             thursday++
         }
         let newDate = firstDate.setDate(firstDate.getDate() + 1)
-        console.log(`newDate ${newDate}, firstDate ${firstDate}`)
+        // console.log(`newDate ${newDate}, firstDate ${firstDate}`)
         firstDate = new Date(newDate);
     }
     console.log(`The 20ths: ${the20th}, Thursdays: ${thursday}, Thursday the 20ths: ${thursday20th}`)
+    // now I need to make the function fill in the H1s on the page
     // if date[i][dayOfWeek] = "Thursday" && date[i][day] = 20, console.log("Thursday the 20th!")
     // if date[i][dayOfWeek] = "Thursday", console.log("Thursday")
     // if date[i][day] = 20, console.log("the 20th!")
