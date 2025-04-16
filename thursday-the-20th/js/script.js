@@ -1,34 +1,55 @@
 
-document.querySelector('#inputDate').addEventListener('click',inputDate)
-document.querySelector('#endDate').addEventListener('click',endingDate)
-document.querySelector('#currentDate').addEventsListener('click', currentDate)
-document.querySelector('#includeLastDay').addEventsListener('click', includeLastDay)
-
-// 4/11/2025 this isn't working and needs so much help
+document.querySelector('#inputDate').addEventListener('input', inputDate)
+document.querySelector('#endDate').addEventListener('input',endingDate)
+document.querySelector('#currentDate').addEventListener('click', currentDate)
+document.querySelector('#includeLastDay').addEventListener('click', includeLastDay)
+document.querySelector('#submission').addEventListener('click', thursdayThe20th)
 
 function inputDate(){
-    let inputDate = new Date(document.querySelector('#inputDate').value)
-    console.log(inputDate)
+    let firstDate = new Date(document.querySelector('#inputDate').value)
+    console.log(firstDate)
+    // I need to adjust the date for UTC - April 1st is returning March 31st at 7pm CST
+    return firstDate
 }
 function endingDate(){
-    let endingDate = new Date(document.querySelector('#endDate').value)
-    console.log(endingDate)
+    let secondDate = new Date(document.querySelector('#endDate').value)
+    console.log(secondDate)
+    return secondDate
 }
 function currentDate(){
-    let today = document.querySelector('#currentDate').addEventsListener('click')
-    return today
-}
-function includeLastDaty(){
+    // I think for version 1.0, I don't need to get current date - this would just be a nice shortcut
 
+    let today = new Date();
+    let today2 = today.getDate()+today.getMonth()+today.getFullYear()
+    
+}
+function includeLastDay(){
+    // current date seems to be the default
+    // so if includeLastDay is turned off, subtract one day from day count
 }
 
-function compareDate(inputDate, endDate, currentDate, includeLastDay, submission){
-    // option to include or exclude end date
-    // if endDate is before inputDate,  
-}
 
-function thursdayThe20th(){
-    // for loop?
+function thursdayThe20th(firstDate, secondDate){
+    // we have to use recursion to loop through the dates
+    // we already have our starting and ending dates
+    let thursday = 0,
+        the20th = 0,
+        thursday20th = 0;
+    for (let day = firstDate; day <= secondDate; day.setDate(day.getDate()+1)){
+        if (day.getDate() === 20 && day.getDay() === 4){
+            thursday20th++
+        }
+        if (day.getDate() === 20){
+            the20th++
+        }
+        if (day.getDay() === 4){
+            thursday++
+        }
+        let newDate = firstDate.setDate(firstDate.getDate() + 1)
+        console.log(`newDate ${newDate}, firstDate ${firstDate}`)
+        firstDate = new Date(newDate);
+    }
+    console.log(`The 20ths: ${the20th}, Thursdays: ${thursday}, Thursday the 20ths: ${thursday20th}`)
     // if date[i][dayOfWeek] = "Thursday" && date[i][day] = 20, console.log("Thursday the 20th!")
     // if date[i][dayOfWeek] = "Thursday", console.log("Thursday")
     // if date[i][day] = 20, console.log("the 20th!")
