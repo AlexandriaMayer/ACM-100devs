@@ -51,6 +51,9 @@ function thursdayThe20th(){
         // console.log(`newDate ${newDate}, firstDate ${firstDate}`)
         firstDate = new Date(newDate);
     }
+    document.querySelector('#thursdays').innerText = `${thursday} Thursdays.`;
+    document.querySelector('#the20ths').innerText = `${the20th} The 20ths.`;
+    document.querySelector('#thursdayThe20ths').innerText = `${thursday20th} Thursday The 20ths.`;
     console.log(`The 20ths: ${the20th}, Thursdays: ${thursday}, Thursday the 20ths: ${thursday20th}`)
     // now I need to make the function fill in the H1s on the page
     // if date[i][dayOfWeek] = "Thursday" && date[i][day] = 20, console.log("Thursday the 20th!")
