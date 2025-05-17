@@ -1,0 +1,22 @@
+{
+  "name": "acm-100devs",
+  "version": "1.0.0",
+  "description": "Completed homework and coursework for 100devs",
+  "main": "function-practice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandriaMayer/ACM-100devs.git"
+  },
+  "author": "Alexandria Mayer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandriaMayer/ACM-100devs/issues"
+  },
+  "homepage": "https://github.com/AlexandriaMayer/ACM-100devs#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
