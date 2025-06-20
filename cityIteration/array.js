@@ -27,3 +27,5 @@ cityCounter(1000, 1.25)
 // 6/18/25 pausing, got the pop growth formula, but now I need to figure how to iterate over location
 
 //  6/18/25 changed i to act as a primary key, population is a different field. basic x & y iteration added
+
+// 6/19/25 sad girl hours
