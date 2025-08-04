@@ -5,7 +5,8 @@ document.querySelector('button').addEventListener('click', getDrink)
 function getDrink(){
     let selection = document.querySelector('#input').value
     // trim and replace
-    let drink = encodeURIComponent(selection.trim().replaceAll(" ", "%20"));
+    console.log(selection)
+    let drink = encodeURIComponent(selection.trim());
     console.log(drink)
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
     .then(res=>res.json())
