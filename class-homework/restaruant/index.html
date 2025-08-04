@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- author: Alexandria Mayer @balsapphic_vinegar on discord-->
+    <head>
+        <meta charset="utf-8">
+        <title>Our Cuisine</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="C:\Users\allie\Downloads\100devs\class10-materials\class10-materials\restaruant\icons8-breakfast-64.png"
+            alt="Logo"
+            width="64px"
+            height="64px">
+            <ul class="header-list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="Menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="location.html">Location</a>
+                </li>
+            </ul>
+            <a class="cart"><button><img src="C:\Users\allie\Downloads\100devs\class10-materials\class10-materials\restaruant\icons8-cart-48.png"
+                alt="cart"
+                width="50px"
+                height="50px"></button></a>
+            <a class="search"><button><img src="C:\Users\allie\Downloads\100devs\class10-materials\class10-materials\restaruant\icons8-search-50.png"
+                alt="search"
+                width="50px"
+                height="50px"></button></a>
+        </header>
+        <main>
+            <!--re-did the boxes-->
+            <section class="index-information">
+                <section class="headline">
+                    <h1>Welcome To Our Cuisine Restaurant</h1>
+                </section>
+                <section class="select">                    
+                    <input type="text" name="search" placeholder="&#128269 Search Here">
+                                    <!--Trying the button method-->
+                                    <!--
+                                    <select class='location-list' name="Locations &#x25BE;" multiple>
+                                        <option value="Arboretum" selected>Arboretum</option>
+                                        <option value="Sunset Valley">Sunset Valley</option>
+                                        <option value="Redbud">Redbud Quary</option>
+                                        <option value="Downtown">Downtown</option>
+                                    </select>-->
+                                    <!-- and the ul/li list method
+                                    <ul class="location-list">
+                                        Locations
+                                        <li>
+                                            <a href="#">Arboretum</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sunset Valley</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Redburd Quary</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Downtown</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mueller</a>
+                                        </li>
+                                    </ul>-->
+                                    <!--div method-->
+                        <div class="dropdown">
+                            <button class="link">Locations &#x25BE;</button>
+                            <div class="dropdown-menu">
+                                            <!--Shouldn't this be a UL?-->
+                                <a href="#">Arboretum</a>
+                                <a href="#">Sunset Valley</a>
+                                <a href="#">Redburd Quary</a>
+                                <a href="#">Downtown</a>
+                                <a href="#">Mueller</a>
+                                </div>
+                        </div>
+                </section>
+                <section>   
+                    <ul class="socials-list">
+                        <li>
+                            <a class="socials" href="#"><img src="C:\Users\allie\Downloads\100devs\class10-materials\class10-materials\restaruant\icons8-facebook-50.png"
+                                alt="Facebook "
+                                width="24px"
+                                height="24px">252k</a>
+                        </li>
+                        <li>
+                            <a class="socials" href="#"><img src="C:\Users\allie\Downloads\100devs\class10-materials\class10-materials\restaruant\icons8-twitter-50.png"
+                                alt="Twitter "
+                                width="24px"
+                                height="24px">62k</a>
+                        </li>
+                        <li>
+                            <a class="socials" href="#"><img src="C:\Users\allie\Downloads\100devs\class10-materials\class10-materials\restaruant\icons8-instagram-48.png"
+                                alt="Instagram "
+                                width="24px"
+                                height="24px">55k</a>
+                        </li>
+                    </ul>
+                </section> 
+                  
+            </section>
+            <section class="breakfast">
+                <img
+                    src="C:\Users\allie\Downloads\100devs\class10-materials\class10-materials\restaruant\pexels-chokniti-khongchum-1197604-2280545.jpg"
+                    alt="breakfast"
+                    width="400px"
+                    height="600px">
+            </section>         
+        </main>
+    </body>

@@ -5,9 +5,9 @@ document.querySelector('button').addEventListener('click', getDrink)
 function getDrink(){
     let selection = document.querySelector('#input').value
     // trim and replace
-    let drink = selection.trim().replaceAll(" ", "%20")
+    let drink = encodeURIComponent(selection.trim().replaceAll(" ", "%20"));
     console.log(drink)
-    fetch(`www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
     .then(res=>res.json())
     .then(data=>{
         console.log(data.drinks[0]) // without the indexing, it returns an array of objects
