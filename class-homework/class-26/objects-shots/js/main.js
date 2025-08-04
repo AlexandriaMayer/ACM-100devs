@@ -3,14 +3,17 @@
 document.querySelector('button').addEventListener('click', getDrink)
 
 function getDrink(){
-    let drink = document.querySelector('intput').value
-    fetch(` www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
+    let selection = document.querySelector('#input').value
+    // trim and replace
+    let drink = selection.trim().replaceAll(" ", "%20")
+    console.log(drink)
+    fetch(`www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
     .then(res=>res.json())
     .then(data=>{
-        console.log(data.drinks[2]) // without the indexing, it returns an array of objects
-        document.querySelector('h2').innerText = data.drinks[2].strDrink
-        document.querySelector('img').src = data.drinks[2].strDrinkThumb
-        document.querySelector('h3').innerText = data.drinks[2].strInstructions 
+        console.log(data.drinks[0]) // without the indexing, it returns an array of objects
+        document.querySelector('h2').innerText = data.drinks[0].strDrink
+        document.querySelector('img').src = data.drinks[0].strDrinkThumb
+        document.querySelector('h3').innerText = data.drinks[0].strInstructions 
     })
     .catch(err=>{console.log(`error ${err}`)})
 }

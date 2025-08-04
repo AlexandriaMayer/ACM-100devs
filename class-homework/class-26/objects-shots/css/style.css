@@ -10,6 +10,15 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+}
+
 img{
   display: block;
   margin: 0 auto;
