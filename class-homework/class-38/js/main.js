@@ -159,6 +159,26 @@ const metroLine5 = new WaterlooMetroLines(138,
         "yes",
         "no",
         "yes")
+const metroLine6 = new WaterlooMetroLines(138, 
+        6, 
+        "M6",
+        "Metro Line 6",
+        "Justice",
+        "Heavy Rail Metro", 
+        "",
+        "#df04ccff",
+        "#000000ff", 
+        "m6.jpg", 
+        "",
+        2015,
+        [2017, 2018, 2020, 2022],
+        2022,
+        undefined,
+        true,
+        "no",
+        "yes",
+        "no",
+        "yes")
 const metroLine7 = new WaterlooMetroLines(138, 
         7, 
         "M7",
@@ -179,3 +199,15 @@ const metroLine7 = new WaterlooMetroLines(138,
         "yes",
         "no",
         "yes")
+
+let wmL = [metroLine1, metroLine2, metroLine3, metroLine4, metroLine5, metroLine6, metroLine7]
+
+function toJson(arr){
+    let wmlJSON = []
+    for (let i = 0; arr.length; i++){
+        wmlJSON.push(JSON.stringify(arr[i]))
+    }
+    console.log(wmlJSON);
+    return wmlJSON;
+}
+toJson(wmL)
